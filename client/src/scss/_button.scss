@@ -1,0 +1,13 @@
+.button {
+	width: 140px;
+	height: 40px;
+	background: $pink;
+	color: white;
+	font-size: 1.5rem;
+	border: 1px solid white;
+	cursor: pointer;
+}
+.button-primary:hover {
+	border: 1px solid $pink;
+	transition: 0.3s;
+}

@@ -1,0 +1,55 @@
+.form_wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.form {
+		border: 5px solid $lightgray;
+		max-width: 400px;
+		width: 400px;
+		display: flex;
+		flex-direction: column;
+		padding: 20px 20px;
+		a {
+			color: $pink;
+			font-size: 1.4rem;
+		}
+		p {
+			font-size: 1.4rem;
+		}
+		h2 {
+			font-size: 3rem;
+			padding: 10px 0 20px 0;
+			color: $pink;
+		}
+
+		.form_input {
+			background-color: $lightgray;
+			margin: 10px 0;
+			padding: 15px 10px;
+			width: 100%;
+			font-size: 1.5rem;
+			border: 1.5px solid lightgray;
+			border-radius: 2px;
+			transition: all 0.3s ease-out;
+		}
+		.form_input:focus {
+			color: #000000;
+			background-color: #ffffff;
+			border: 1.5px solid $pink;
+			outline: 0;
+		}
+		.btn-grp {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 20px 0;
+			a {
+				font-size: 2rem;
+				color: $pink;
+			}
+		}
+	}
+}
+
+@import './form-media.scss';
