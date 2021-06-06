@@ -22,7 +22,7 @@ export const register = (body) => async (dispatch) => {
 			},
 		};
 		const { data } = await axios.post(
-			'http://localhost:5000/api/auth/register',
+			'https://mernstack-authentication.herokuapp.com/api/auth/register',
 			body,
 			config
 		);
@@ -62,7 +62,7 @@ export const login = (body) => async (dispatch) => {
 			},
 		};
 		const { data } = await axios.post(
-			'http://localhost:5000/api/auth/login',
+			'https://mernstack-authentication.herokuapp.com/api/auth/login',
 			body,
 			config
 		);
@@ -103,7 +103,7 @@ export const forgotpassword = (email) => async (dispatch) => {
 		};
 
 		const { data } = await axios.post(
-			'http://localhost:5000/api/auth/forgotpassword',
+			'https://mernstack-authentication.herokuapp.com/api/auth/forgotpassword',
 			{ email },
 			config
 		);
@@ -136,7 +136,7 @@ export const resetpassword = (password, resetToken) => async (dispatch) => {
 		};
 
 		const { data } = await axios.put(
-			`http://localhost:5000/api/auth/resetpassword/${resetToken}`,
+			`https://mernstack-authentication.herokuapp.com/api/auth/resetpassword/${resetToken}`,
 			{
 				password,
 			},
