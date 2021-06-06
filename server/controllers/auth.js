@@ -64,7 +64,7 @@ exports.forgotpassword = async (req, res, next) => {
 			});
 
 		const resetToken = user.getResetPasswordToken();
-
+ 
 		await user.save();
 		const resetUrl = `https://mern-authentication.netlify.app/passwordreset/${resetToken}`;
 		const message = `
