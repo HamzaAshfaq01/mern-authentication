@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/mern-authentication/static/css/main.a620395c.chunk.css",
-    "main.js": "/mern-authentication/static/js/main.e293519f.chunk.js",
-    "main.js.map": "/mern-authentication/static/js/main.e293519f.chunk.js.map",
+    "main.js": "/mern-authentication/static/js/main.b8b4bdd8.chunk.js",
+    "main.js.map": "/mern-authentication/static/js/main.b8b4bdd8.chunk.js.map",
     "runtime-main.js": "/mern-authentication/static/js/runtime-main.ab335a00.js",
     "runtime-main.js.map": "/mern-authentication/static/js/runtime-main.ab335a00.js.map",
     "static/css/2.db1b90d1.chunk.css": "/mern-authentication/static/css/2.db1b90d1.chunk.css",
-    "static/js/2.27cf55f8.chunk.js": "/mern-authentication/static/js/2.27cf55f8.chunk.js",
-    "static/js/2.27cf55f8.chunk.js.map": "/mern-authentication/static/js/2.27cf55f8.chunk.js.map",
+    "static/js/2.99a8a2cf.chunk.js": "/mern-authentication/static/js/2.99a8a2cf.chunk.js",
+    "static/js/2.99a8a2cf.chunk.js.map": "/mern-authentication/static/js/2.99a8a2cf.chunk.js.map",
     "index.html": "/mern-authentication/index.html",
     "static/css/2.db1b90d1.chunk.css.map": "/mern-authentication/static/css/2.db1b90d1.chunk.css.map",
     "static/css/main.a620395c.chunk.css.map": "/mern-authentication/static/css/main.a620395c.chunk.css.map",
-    "static/js/2.27cf55f8.chunk.js.LICENSE.txt": "/mern-authentication/static/js/2.27cf55f8.chunk.js.LICENSE.txt"
+    "static/js/2.99a8a2cf.chunk.js.LICENSE.txt": "/mern-authentication/static/js/2.99a8a2cf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ab335a00.js",
     "static/css/2.db1b90d1.chunk.css",
-    "static/js/2.27cf55f8.chunk.js",
+    "static/js/2.99a8a2cf.chunk.js",
     "static/css/main.a620395c.chunk.css",
-    "static/js/main.e293519f.chunk.js"
+    "static/js/main.b8b4bdd8.chunk.js"
   ]
 }
