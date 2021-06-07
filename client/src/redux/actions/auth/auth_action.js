@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from '../../../utils/axios';
 // import { toast } from 'react-toastify';
 import { returnMessage } from '../message/message_action';
 import { setLoading, clearLoading } from '../loading/loading_action';
@@ -16,16 +16,8 @@ import {
 export const register = (body) => async (dispatch) => {
 	try {
 		dispatch(setLoading(true));
-		const config = {
-			headers: {
-				'Content-Type': 'application/json',
-			},
-		};
-		const { data } = await axios.post(
-			'https://mernstack-authentication.herokuapp.com/api/auth/register',
-			body,
-			config
-		);
+
+		const { data } = await axios.post('/api/auth/register', body);
 
 		dispatch({
 			type: REGISTER_SUCCESS,
@@ -56,16 +48,8 @@ export const register = (body) => async (dispatch) => {
 export const login = (body) => async (dispatch) => {
 	try {
 		dispatch(setLoading(true));
-		const config = {
-			headers: {
-				'Content-Type': 'application/json',
-			},
-		};
-		const { data } = await axios.post(
-			'https://mernstack-authentication.herokuapp.com/api/auth/login',
-			body,
-			config
-		);
+
+		const { data } = await axios.post('/api/auth/login', body);
 		dispatch({
 			type: LOGIN_SUCCESS,
 			payload: data,
@@ -96,17 +80,8 @@ export const login = (body) => async (dispatch) => {
 export const forgotpassword = (email) => async (dispatch) => {
 	try {
 		dispatch(setLoading());
-		const config = {
-			headers: {
-				'Content-type': 'application/json',
-			},
-		};
 
-		const { data } = await axios.post(
-			'https://mernstack-authentication.herokuapp.com/api/auth/forgotpassword',
-			{ email },
-			config
-		);
+		const { data } = await axios.post('/api/auth/forgotpassword', { email });
 
 		dispatch(clearLoading());
 		dispatch(returnMessage(data.message));
@@ -129,19 +104,10 @@ export const forgotpassword = (email) => async (dispatch) => {
 export const resetpassword = (password, resetToken) => async (dispatch) => {
 	try {
 		dispatch(setLoading());
-		const config = {
-			headers: {
-				'Content-type': 'application/json',
-			},
-		};
 
-		const { data } = await axios.put(
-			`https://mernstack-authentication.herokuapp.com/api/auth/resetpassword/${resetToken}`,
-			{
-				password,
-			},
-			config
-		);
+		const { data } = await axios.put(`/api/auth/resetpassword/${resetToken}`, {
+			password,
+		});
 
 		dispatch({
 			type: RESET_SUCCESS,
