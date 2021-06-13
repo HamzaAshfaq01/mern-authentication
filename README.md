@@ -24,7 +24,3 @@ Authentication-App developed using MERN stack technologies.
 -   User can't access Private Routes without login.
 -   Error Handling.
 -   Professioanl Code Structure
-
-## Project Preview:
-
-https://mern-authentication.netlify.app/
